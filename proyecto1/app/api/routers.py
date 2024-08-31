@@ -5,8 +5,8 @@ from ..genero.views import *
 
 router = DefaultRouter()
 
-router.register(r'libro', StateViewset, basename='libro')
-router.register(r'autor', StateViewset, basename='autor')
-router.register(r'genero', StateViewset, basename='genero')
+router.register(r'libro', LibroViewset, basename='libro')
+router.register(r'autor', AutorViewset, basename='autor')
+#"router.register(r'genero', GeneroViewset, basename='genero')
 
 urlpatterns = router.urls
