@@ -1,5 +1,6 @@
 from django.db import models
 from ..Genero.models import Genero
+
 class Genero (models.Model):
     class Meta:
         verbose_name='Genero'
