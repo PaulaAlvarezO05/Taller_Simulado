@@ -6,4 +6,6 @@ class Genero (models.Model):
         verbose_name_plural='Genero'
     
     Tipo = models.CharField('Tipo', max_length=100)
-    
+
+    def __str__(self):
+        return f'{self.Tipo}'
