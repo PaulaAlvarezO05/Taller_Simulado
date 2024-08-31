@@ -6,4 +6,15 @@ from django_filters.rest_framework import DjangoFilterBackend
 from .serializers import *
 
 class AutorViewset(viewsets.ModelViewSet):
-    queryset = 
+    queryset = Autor.objects.all()
+    serializers_class = AutorSerializer
+    
+    filter_backends = [
+        DjangoFilterBackend,
+        filters.SearchFilter,
+        filters.OrderingFilter,
+    ]
+    
+    filterset_fields = ('__all__')
+    search_fields = ('__all__')
+    ordering_fields = ('__all__')
