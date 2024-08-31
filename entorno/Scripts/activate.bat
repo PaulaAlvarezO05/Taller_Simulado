@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
+set VIRTUAL_ENV=C:\Users\Ayde Posada\OneDrive - Tecnologico de Antioquia Institucion Universitaria\Escritorio\Ayde 2024-2\Tendencias\Taller_Simulado\entorno
+=======
 set VIRTUAL_ENV=C:\Users\Ayde Posada\Taller_Simulado\entorno
+>>>>>>> 6c307e5b1f842125268496e18b12b5d802c21e4f
 
 if not defined PROMPT set PROMPT=$P$G
 
