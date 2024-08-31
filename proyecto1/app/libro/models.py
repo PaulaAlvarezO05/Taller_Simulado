@@ -17,7 +17,7 @@ class Libro (models.Model):
     fecha =models.DateTimeField("Fecha de publicación", max_length=50)
 
     idGenero = models.ForeignKey ( 
-    Autor, 
+    Genero, 
     verbose_name="Genero", 
     on_delete=models.CASCADE, 
     null=True, 
