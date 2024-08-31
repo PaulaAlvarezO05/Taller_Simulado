@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django_filters',
     'app.libro',
     'app.autor',
-    #'app.genero',
+    'app.genero',
 ]
 
 MIDDLEWARE = [
