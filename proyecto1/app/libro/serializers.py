@@ -5,4 +5,4 @@ class LibroSerializer(serializers.ModelSerializer):
 
     class Meta: 
         model = Libro
-        fields = ('_all_') 
+        fields = ('__all__') 

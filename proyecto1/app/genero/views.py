@@ -7,7 +7,7 @@ from .serializers import *
 
 class GeneroViewset(viewsets.ModelViewSet):
     queryset = Genero.objects.all()
-    serializers_class = GeneroSerializer
+    serializer_class = GeneroSerializer
     
     filter_backends = [
         DjangoFilterBackend,

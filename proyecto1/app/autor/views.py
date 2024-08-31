@@ -7,7 +7,7 @@ from .serializers import *
 
 class AutorViewset(viewsets.ModelViewSet):
     queryset = Autor.objects.all()
-    serializers_class = AutorSerializer
+    serializer_class = AutorSerializer
     
     filter_backends = [
         DjangoFilterBackend,

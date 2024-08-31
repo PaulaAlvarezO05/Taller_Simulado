@@ -7,7 +7,7 @@ from .serializers import *
 
 class LibroViewset(viewsets.ModelViewSet):
     queryset = Libro.objects.all()
-    serializers_class = LibroSerializer
+    serializer_class = LibroSerializer
     
     filter_backends = [
         DjangoFilterBackend,

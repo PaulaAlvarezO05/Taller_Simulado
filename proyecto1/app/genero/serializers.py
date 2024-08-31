@@ -5,4 +5,4 @@ class GeneroSerializer(serializers.ModelSerializer):
 
     class Meta: 
         model = Genero
-        fields = ('_all_') 
+        fields = ('__all__')
