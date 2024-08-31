@@ -24,6 +24,9 @@ class Libro (models.Model):
     blank=True 
     ) 
     disponibilidad= models.BooleanField(default=False)
+
+    def __str__(self):
+        return f'{self.titulo}{Autor.nombre}'
     
 
 
