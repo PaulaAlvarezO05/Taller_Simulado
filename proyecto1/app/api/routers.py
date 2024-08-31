@@ -1,8 +1,12 @@
-# from rest_framework.routers import DefaultRouter
-# from ..state.views import *
+from rest_framework.routers import DefaultRouter
+from ..libro.views import *
+from ..autor.views import *
+from ..genero.views import *
 
-# router = DefaultRouter()
+router = DefaultRouter()
 
-# router.register(r'state', StateViewset, basename='state')
+router.register(r'libro', StateViewset, basename='libro')
+router.register(r'autor', StateViewset, basename='autor')
+router.register(r'genero', StateViewset, basename='genero')
 
-# urlpatterns = router.urls
+urlpatterns = router.urls
